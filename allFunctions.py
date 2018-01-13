@@ -18,11 +18,10 @@ def check(word, guesses, guess ):
     matches = 0
     for letter in word:
         if letter in guesses:
-            #matches += 1
             status += letter
         else:
             status += '*'
-        if letter == word:
+        if guess == letter:
             matches +=1
     if matches > 1:
         print("Yes! The word contains",matches,guess)
@@ -30,5 +29,5 @@ def check(word, guesses, guess ):
         print("Word contains 1",guess)
     else:
         print("The word does not contain a letter",guess)
-
+    matches = 0
     return status
