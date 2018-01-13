@@ -8,14 +8,14 @@ def main():
     fail = False
     count = 0
     print("Word length is ",len(word))
-
     while not guessed:
-        text = 'Please enter a letter or ' + str(len(word)) + 'letter word'
-        guess = input()
+        text = 'Please enter a letter or ' + str(len(word)) + ' letter word. '
+        guess = input(text)
         guess = guess.upper()
 
         if guess in guesses:
             print("You already guessed ", guess)
+            continue
         elif len(guess) == len(word):
             guesses.append(guess)
             if guess == word:
@@ -31,6 +31,7 @@ def main():
                 print(result)
         else:
             print("Invalid entry")
+            continue
         count += 1
         print(10-count,'tries remaining')
         if(count == 10):

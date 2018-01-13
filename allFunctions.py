@@ -3,8 +3,11 @@ import random
 
 def getWord():
     words = [
-        'tanmay',
-        'sankhe'
+        'apple',
+        'mango',
+        'banana',
+        'tiger',
+        'lion'
     ]
 
     return random.choice(words).upper()
