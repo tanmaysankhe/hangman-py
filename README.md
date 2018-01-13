@@ -3,8 +3,8 @@
 You are given 10 tries to guess a word correctly. That is, 10 tries to save the hanging man.
 
 ## How to play
-Download the -hangman-py- folder  
-run -pyhton3 hangman.py- 
+Download the ''' hangman-py ''' folder  
+run ''' pyhton3 hangman.py ''' 
 
 ### Try guessing one letter at a time
 
